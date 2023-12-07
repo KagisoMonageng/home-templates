@@ -1,0 +1,26 @@
+@import url(../../../input.css)
+nav.deskNav
+    display: none
+nav a
+    
+    color: #fff
+    transition: all 0.3s ease-in-out
+    &.nav-active
+        background-color: #fff
+        filter: drop-shadow(1px 1px 20px rgba(255, 255, 255, 0.5))
+        color: #000
+    &:hover
+        background-color: #fff
+        color: #000
+        cursor: pointer
+        filter: drop-shadow(1px 1px 20px rgba(255, 255, 255, 0.5))
+
+@media screen and (min-width: 992px)
+    nav.deskNav
+        display: flex !important
+        width: 48px
+        
+    
+        
+
+  
