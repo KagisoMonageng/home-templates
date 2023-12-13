@@ -1,0 +1,33 @@
+@import url('clash-display.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1.main-name{
+  font-family: 'ClashDisplay-Medium';
+  font-size: 200px;
+}
+
+.slide-main img.main-img{
+  width: 250px;
+  z-index: 1;
+}
+
+
+.slide-main#orange{
+  background-color: #FFEFDA;
+}
+.slide-main .btn{
+  bottom: 5%;
+  transition: all 0.8s ease-in-out;
+  font-family: 'ClashDisplay-Regular';
+}
+.slide-main#orange .btn:hover{
+background-color: #FFD399;
+
+}
+
+.slide-main#orange h1.main-name{
+  color: #FFD399;
+}
