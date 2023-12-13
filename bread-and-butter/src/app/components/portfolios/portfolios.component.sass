@@ -2,4 +2,19 @@
     min-height: 500px
 
 .port-card
-  
+    span
+        line-height: 1
+    .design-design
+        &:nth-child(1n)
+            @apply text-slate-700 italic relative
+
+        &:nth-child(2n)
+            &::after
+                content: ''
+                width: 3px
+                aspect-ratio: 1/1
+                position: absolute
+                bottom: -5px
+                left: 50%
+                @apply bg-orange-700 rounded-full
+            @apply text-orange-700

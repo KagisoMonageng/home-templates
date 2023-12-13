@@ -1,12 +1,13 @@
 <div class="container pb-28">
     <h2 class="mb-20">Portfolio</h2>
 
-    <div class="ports-holder relative flex justify-start">
-        <div class="port-card prt-1 w-1/2 px-20 py-7 rounded-2xl  bg-opacity-5 backdrop-blur-lg" id="">
+    <div class="ports-holder relative flex flex-col lg:flex-row justify-start">
+        <div class="port-card prt-1 w-full lg:w-1/2 lg:px-20 py-7 rounded-2xl  bg-opacity-5 backdrop-blur-lg" id="">
 
-            <div class="w-full h-52 bg-red-600 rounded-2xl mb-8"></div>
-
-            <h3>Project One</h3>
+            <div class="w-full h-52  rounded-2xl mb-8 p-3 text-center">
+                <span class="font-medium  text-white  design-design text-xs" *ngFor="let text of texts">Developer&Dev </span>
+            </div>
+            <h3>Developer Portal</h3>
             <p class="smaller-intro">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sunt ad dolores eius vitae, officiis
                 repudiandae sed adipisci nesciunt doloribus quo tempore quasi minima autem quas optio, itaque enim
@@ -14,11 +15,13 @@
             </p>
 
         </div>
-        <div class="notShowing port-card prt-2 w-1/2 px-20 py-7 rounded-2xl bg-opacity-5 backdrop-blur-lg" id="">
+        <div class="notShowing port-card prt-2 w-full lg:w-1/2 lg:px-20 py-7 rounded-2xl bg-opacity-5 backdrop-blur-lg" id="">
 
-            <div class="w-full h-52 bg-lime-500 rounded-2xl mb-8"></div>
+            <div class="w-full h-52  rounded-2xl mb-8 p-3 text-center">
+                <span class="font-medium  text-white  design-design text-xs" *ngFor="let text of texts">Design&Design </span>
+            </div>
 
-            <h3>Project One</h3>
+            <h3>Design Portal</h3>
             <p class="smaller-intro">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sunt ad dolores eius vitae, officiis
                 repudiandae sed adipisci nesciunt doloribus quo tempore quasi minima autem quas optio, itaque enim

@@ -1,31 +1,40 @@
 <div class="container">
-    <div class="flex justify-between text-black  py-5">
-        <p class="text-5xl font-semibold">B<span class="text-red-600">.</span></p>
+  <div class="flex justify-between text-black  py-5">
+    <p class="text-5xl font-semibold">B<span class="text-red-600">.</span></p>
 
-        <nav class="deskNav lg:bg-black p-1 rounded-full gap-5 justify-evenly font-thin">
-                <a class="py-2 px-6 rounded-full nav-active font-medium" href="#">Introduction</a>
-                <a class="py-2 px-6 rounded-full font-medium" href="#">Portfolio <span class="badge border-none bg-white rounded-full h-5 w-5 text-black">2</span></a>
-                <a class="py-2 px-6 rounded-full font-medium" href="#">About</a>
-                <a class="py-2 px-6 rounded-full font-medium" href="#">Contact</a>
-        </nav>
+    <nav class="deskNav lg:bg-black p-1 rounded-full gap-5 justify-evenly font-thin">
+      <a class="py-2 px-6 rounded-full nav-active font-medium" href="#">Introduction</a>
+      <a class="py-2 px-6 rounded-full font-medium" href="#">Portfolio <span
+          class="badge border-none bg-white rounded-full h-5 w-5 text-black">2</span></a>
+      <a class="py-2 px-6 rounded-full font-medium" href="#">About</a>
+      <a class="py-2 px-6 rounded-full font-medium" href="#">Contact</a>
+    </nav>
 
-        <div class="drawer lg:hidden">
-            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-              <!-- Page content here -->
-              <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label>
-            </div> 
-            <div class="drawer-side">
-              <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-              <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-                <!-- Sidebar content here -->
-                <li><a>Sidebar Item 1</a></li>
-                <li><a>Sidebar Item 2</a></li>
-                
-              </ul>
-            </div>
-          </div>
+    <div class="drawer lg:hidden flex justify-end">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        <!-- Page content here -->
+        <label for="my-drawer" class="btn btn-primary drawer-button rounded-full">Menu</label>
+      </div>
+      <div class="drawer-side">
+        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+        <ul class="menu py-20 px-8 w-80 min-h-full bg-base-200 text-base-content">
+          <!-- Sidebar content here -->
+          <p class="text-5xl font-semibold mb-28">B<span class="text-red-600">.</span></p>
+          <li> <a class="py-2 px-6 rounded-full font-medium" href="#">Introduction</a>
+          </li>
+          <li> <a class="py-2 px-6 rounded-full font-medium" href="#">Portfolio <span
+                class="badge border-none bg-white rounded-full h-5 w-5 text-black">2</span></a>
+          </li>
+          <li> <a class="py-2 px-6 rounded-full font-medium" href="#">About</a>
+          </li>
+          <li> <a class="py-2 px-6 rounded-full font-medium" href="#">Contact</a>
+          </li>
 
-        <span class="hidden lg:block"></span>
+        </ul>
+      </div>
     </div>
+
+    <span class="hidden lg:block"></span>
+  </div>
 </div>

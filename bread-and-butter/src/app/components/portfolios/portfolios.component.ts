@@ -16,23 +16,10 @@ gsap.registerPlugin(Flip, ScrollTrigger, ScrollToPlugin, EaselPlugin, PixiPlugin
   styleUrls: ['./portfolios.component.sass']
 })
 export class PortfoliosComponent implements OnInit {
+
+  texts : number[] =[]
   ngOnInit(): void {
-
-    gsap.fromTo('.prt-1', { translateX: '0%'}, {
-      translateX: '50%', scrollTrigger: {
-        trigger: '.prt-1',
-        start: 'top 30%',
-        scrub: true
-      }
-    })
-
-    gsap.fromTo('.prt-2', { translateX: '0%'}, {
-      translateX: '-50%', scrollTrigger: {
-        trigger: '.prt-2',
-        start: 'top 30%',
-        scrub: true
-      }
-    })
+    this.texts.length = 21
   }
 
 }
