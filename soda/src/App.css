@@ -4,30 +4,132 @@
 @tailwind utilities;
 
 
-h1.main-name{
-  font-family: 'ClashDisplay-Medium';
-  font-size: 200px;
+.App {
+  overflow: hidden;
 }
 
-.slide-main img.main-img{
-  width: 250px;
+h1.main-name {
+  font-family: 'ClashDisplay-Medium';
+  font-size: 200px;
+ 
+}
+
+.absolute {
   z-index: 1;
 }
 
+.slide-main img.main-img {
+  width: 250px;
+  z-index: 3;
+}
 
-.slide-main#orange{
+
+.slide-main#orange {
+  position: relative;
   background-color: #FFEFDA;
 }
-.slide-main .btn{
+
+.pine-bg {
+
+  width: 100%;
+  height: 100%;
+  background-color: #E4FFC0;
+  transform: translateX(100%);
+  position: absolute;
+
+}
+
+.slide-main .btn {
   bottom: 5%;
   transition: all 0.8s ease-in-out;
   font-family: 'ClashDisplay-Regular';
 }
-.slide-main#orange .btn:hover{
-background-color: #FFD399;
 
+.slide-main#orange .btn:hover {
+  background-color: #FFD399;
 }
 
-.slide-main#orange h1.main-name{
+.slide-main#orange .btn.pine:hover {
+  background-color: #B7EC73 !important;
+}
+
+.slide-main#orange h1.main-name {
   color: #FFD399;
+}
+
+.can-holder {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.orange-fav {
+  z-index: 5;
+  height: 67%;
+  width: 100%;
+  background-image: url(./assets/orange/orange-fav.png);
+  background-size: 449%;
+  background-repeat: no-repeat;
+  background-position: 28%;
+  bottom: 54px;
+}
+
+
+
+/* Orange */
+.half-img {
+  left: 62%;
+  width: 200px;
+  top: 30%;
+  z-index: 2;
+}
+
+.big-slice-img {
+  bottom: 20%;
+  width: 300px;
+  left: 28%;
+  z-index: 2;
+}
+
+.leaf-img {
+  top: 25%;
+  left: 34%;
+  width: 180px;
+  z-index: 2;
+}
+
+
+
+/* Pine */
+
+.pineSlice {
+  top: 25%;
+  left: 44%;
+  width: 180px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.pineBigSlice {
+  left: 44%;
+  width: 300px;
+  top: 44%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.smallestPine {
+  bottom: 33%;
+  width: 130px;
+  left: 44%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.inc {
+  z-index: 3;
 }
