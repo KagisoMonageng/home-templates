@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black n White</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+
+    <section class="main">
+        <div class="white-sec" id="white">
+
+            <h1>White Background</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nisi, ullam fugiat molestias quaerat maxime
+                voluptatem iure esse officia placeat. Perspiciatis ex nobis, pariatur non id a accusantium temporibus
+                sapiente blanditiis facilis explicabo qui delectus fugiat, deleniti, dolor exercitationem doloribus ut
+                voluptate! Earum, optio sapiente? Ad voluptas exercitationem nemo praesentium, ab eum ratione amet!
+                Eligendi quasi officiis magnam enim accusantium saepe cupiditate deleniti earum, libero sed eaque error
+                accusamus corporis excepturi repellat ex adipisci impedit consectetur amet. Quo necessitatibus ad error
+                nostrum reiciendis tempora molestias dolor eius accusamus asperiores numquam dolorem, fugiat adipisci
+                sequi minima labore quasi. Id, corrupti repudiandae.</p>
+        </div>
+
+
+        <div class="black-sec" id="black">
+
+            <h1>Black Background</h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nisi, ullam fugiat molestias quaerat maxime
+                voluptatem iure esse officia placeat. Perspiciatis ex nobis, pariatur non id a accusantium temporibus
+                sapiente blanditiis facilis explicabo qui delectus fugiat, deleniti, dolor exercitationem doloribus ut
+                voluptate! Earum, optio sapiente? Ad voluptas exercitationem nemo praesentium, ab eum ratione amet!
+                Eligendi quasi officiis magnam enim accusantium saepe cupiditate deleniti earum, libero sed eaque error
+                accusamus corporis excepturi repellat ex adipisci impedit consectetur amet. Quo necessitatibus ad error
+                nostrum reiciendis tempora molestias dolor eius accusamus asperiores numquam dolorem, fugiat adipisci
+                sequi minima labore quasi. Id, corrupti repudiandae.</p>
+        </div>
+
+    </section>
+
+
+    <script>
+        let cursor = document.querySelector(".cursor");
+
+        window.onmousemove = (e) =>{
+            let mouseX = e.clientX;
+            let mouseY = e.clientY;
+
+            let newX = mouseX - 25
+            let newY = mouseY - 25
+
+            cursor.style.transform = "translate3d(" + newX + "px," + newY +"px,0px)";
+            cursor.style.mixBlendMode= "difference"
+        }
+    </script>
+
+</body>
+
+</html>
